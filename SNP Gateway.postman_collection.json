@@ -1,0 +1,89 @@
+{
+	"info": {
+		"_postman_id": "3eec5582-81be-4aae-82d8-92d9b5495fa5",
+		"name": "SNP Gateway",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9011645"
+	},
+	"item": [
+		{
+			"name": "v1",
+			"item": [
+				{
+					"name": "Test Controller",
+					"item": [
+						{
+							"name": "Try Static Token",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "X-API-Key",
+										"value": "snp-gateway",
+										"type": "text"
+									},
+									{
+										"key": "X-API-Token",
+										"value": "33S6lt93L830C58T6xYHWRCPAsICuvjg",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}/v1/test/try-static-token",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"v1",
+										"test",
+										"try-static-token"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "localhost:8000/api",
+			"type": "string"
+		},
+		{
+			"key": "xApiKey",
+			"value": "snp-gateway",
+			"type": "string"
+		},
+		{
+			"key": "xApiToken",
+			"value": "33S6lt93L830C58T6xYHWRCPAsICuvjg",
+			"type": "string"
+		}
+	]
+}

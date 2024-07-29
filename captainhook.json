@@ -1,0 +1,13 @@
+{
+    "pre-commit": {
+        "enabled": true,
+        "actions": [
+            {
+                "action": "composer format {$STAGED_FILES|of-type:php|separated-by: }"
+            },
+            {
+                "action": "git add {$STAGED_FILES|of-type:php|separated-by: }"
+            }
+        ]
+    }
+}
